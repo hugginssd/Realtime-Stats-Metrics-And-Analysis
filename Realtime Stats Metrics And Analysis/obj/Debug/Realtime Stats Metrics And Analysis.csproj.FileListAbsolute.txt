@@ -1,0 +1,9 @@
+c:\users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\bin\Debug\Realtime Stats Metrics And Analysis.exe.config
+c:\users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\bin\Debug\Realtime Stats Metrics And Analysis.exe
+c:\users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\bin\Debug\Realtime Stats Metrics And Analysis.pdb
+c:\users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime_Stats_Metrics_And_Analysis.Properties.Resources.resources
+c:\users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.csproj.GenerateResource.cache
+c:\users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.csproj.CoreCompileInputs.cache
+c:\users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.exe
+c:\users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.pdb
+c:\users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime_Stats_Metrics_And_Analysis.Form1.resources
