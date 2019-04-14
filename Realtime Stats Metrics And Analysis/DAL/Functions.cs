@@ -13,6 +13,7 @@ namespace Realtime_Stats_Metrics_And_Analysis.DAL
 {
     class Functions
     {
+        //fucollection of project functions 
         public string connection = ConfigurationManager.ConnectionStrings["realtime"].ToString();
         public int _nextId(string table)
         {

@@ -7,4 +7,3 @@ C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Me
 C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.exe
 C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.pdb
-C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.csprojResolveAssemblyReference.cache
