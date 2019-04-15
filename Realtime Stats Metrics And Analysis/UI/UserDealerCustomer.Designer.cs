@@ -79,7 +79,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(512, 393);
+            this.btnDelete.Location = new System.Drawing.Point(513, 393);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(146, 34);
             this.btnDelete.TabIndex = 54;
