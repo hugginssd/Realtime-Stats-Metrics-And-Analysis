@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Realtime_Stats_Metrics_And_Analysis.UI
 {
-    public partial class UserPurchase : UserControl
+    public partial class UserDealerCustomer : UserControl
     {
-        public UserPurchase()
+        public UserDealerCustomer()
         {
             InitializeComponent();
         }

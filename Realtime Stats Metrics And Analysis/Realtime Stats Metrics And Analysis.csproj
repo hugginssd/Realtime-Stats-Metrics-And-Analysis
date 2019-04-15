@@ -65,11 +65,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\UserPurchase.cs">
+    <Compile Include="UI\UserDealerCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\UserPurchase.Designer.cs">
-      <DependentUpon>UserPurchase.cs</DependentUpon>
+    <Compile Include="UI\UserDealerCustomer.Designer.cs">
+      <DependentUpon>UserDealerCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserPurchaseAndSales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserPurchaseAndSales.Designer.cs">
+      <DependentUpon>UserPurchaseAndSales.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -84,8 +90,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI\UserPurchase.resx">
-      <DependentUpon>UserPurchase.cs</DependentUpon>
+    <EmbeddedResource Include="UI\UserDealerCustomer.resx">
+      <DependentUpon>UserDealerCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserPurchaseAndSales.resx">
+      <DependentUpon>UserPurchaseAndSales.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
