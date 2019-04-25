@@ -14,13 +14,14 @@ namespace Realtime_Stats_Metrics_And_Analysis.DAL
     class Functions
     {
         //fucollection of project functions 
-        public string connection = ConfigurationManager.ConnectionStrings["realtime"].ToString();
+       // public string connection = ConfigurationManager.ConnectionStrings["realtime"].ToString();
+       Connection con = new Connection();
         public int _nextId(string table)
         {
             SqlDataAdapter da = null;
             DataTable dt = null;
             int MAX_ID = 0;
-            SqlConnection con = new SqlConnection(connection);
+            SqlConnection con = new SqlConnection(this.con.connection);
             string sql = "SELECT MAX(ID) + 1 FROM " + table;
             SqlCommand cmd = new SqlCommand(sql, con);
             try

@@ -88,7 +88,7 @@
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(783, 445);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(309, 42);
+            this.btnSave.Size = new System.Drawing.Size(271, 42);
             this.btnSave.TabIndex = 53;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -99,7 +99,7 @@
             this.txtReturnamount.Location = new System.Drawing.Point(783, 403);
             this.txtReturnamount.Multiline = true;
             this.txtReturnamount.Name = "txtReturnamount";
-            this.txtReturnamount.Size = new System.Drawing.Size(309, 35);
+            this.txtReturnamount.Size = new System.Drawing.Size(271, 35);
             this.txtReturnamount.TabIndex = 52;
             // 
             // txtPaidamount
@@ -107,7 +107,7 @@
             this.txtPaidamount.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPaidamount.Location = new System.Drawing.Point(781, 367);
             this.txtPaidamount.Name = "txtPaidamount";
-            this.txtPaidamount.Size = new System.Drawing.Size(309, 25);
+            this.txtPaidamount.Size = new System.Drawing.Size(273, 25);
             this.txtPaidamount.TabIndex = 51;
             // 
             // txtGrandtotal
@@ -115,7 +115,7 @@
             this.txtGrandtotal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrandtotal.Location = new System.Drawing.Point(781, 331);
             this.txtGrandtotal.Name = "txtGrandtotal";
-            this.txtGrandtotal.Size = new System.Drawing.Size(309, 25);
+            this.txtGrandtotal.Size = new System.Drawing.Size(273, 25);
             this.txtGrandtotal.TabIndex = 50;
             // 
             // txtVat
@@ -123,7 +123,7 @@
             this.txtVat.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVat.Location = new System.Drawing.Point(781, 291);
             this.txtVat.Name = "txtVat";
-            this.txtVat.Size = new System.Drawing.Size(309, 25);
+            this.txtVat.Size = new System.Drawing.Size(273, 25);
             this.txtVat.TabIndex = 49;
             // 
             // txtDiscount
@@ -131,7 +131,7 @@
             this.txtDiscount.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiscount.Location = new System.Drawing.Point(781, 253);
             this.txtDiscount.Name = "txtDiscount";
-            this.txtDiscount.Size = new System.Drawing.Size(309, 25);
+            this.txtDiscount.Size = new System.Drawing.Size(274, 25);
             this.txtDiscount.TabIndex = 48;
             // 
             // txtSubtotal
@@ -139,7 +139,7 @@
             this.txtSubtotal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSubtotal.Location = new System.Drawing.Point(783, 215);
             this.txtSubtotal.Name = "txtSubtotal";
-            this.txtSubtotal.Size = new System.Drawing.Size(309, 25);
+            this.txtSubtotal.Size = new System.Drawing.Size(271, 25);
             this.txtSubtotal.TabIndex = 47;
             // 
             // Label23
@@ -206,17 +206,17 @@
             // 
             this.Label17.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label17.Location = new System.Drawing.Point(611, 185);
+            this.Label17.Location = new System.Drawing.Point(817, 199);
             this.Label17.Name = "Label17";
             this.Label17.Size = new System.Drawing.Size(174, 19);
             this.Label17.TabIndex = 40;
-            this.Label17.Text = "Calculation Details :";
+            this.Label17.Text = "Calculation Details ";
             // 
             // Label15
             // 
             this.Label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label15.Location = new System.Drawing.Point(-121, 145);
+            this.Label15.Location = new System.Drawing.Point(-41, 199);
             this.Label15.Name = "Label15";
             this.Label15.Size = new System.Drawing.Size(174, 19);
             this.Label15.TabIndex = 39;
@@ -238,12 +238,12 @@
             this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82F));
-            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 167F));
-            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
-            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
-            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
+            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111F));
             this.TableLayoutPanel2.Controls.Add(this.Label10, 0, 1);
             this.TableLayoutPanel2.Controls.Add(this.txtSearchProduct, 1, 1);
             this.TableLayoutPanel2.Controls.Add(this.txtNameProduct, 3, 1);
@@ -262,7 +262,7 @@
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.62264F));
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.37736F));
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TableLayoutPanel2.Size = new System.Drawing.Size(1104, 53);
+            this.TableLayoutPanel2.Size = new System.Drawing.Size(1054, 53);
             this.TableLayoutPanel2.TabIndex = 37;
             // 
             // Label10
@@ -322,7 +322,7 @@
             this.txtInventory.Location = new System.Drawing.Point(491, 23);
             this.txtInventory.Multiline = true;
             this.txtInventory.Name = "txtInventory";
-            this.txtInventory.Size = new System.Drawing.Size(161, 26);
+            this.txtInventory.Size = new System.Drawing.Size(150, 26);
             this.txtInventory.TabIndex = 10;
             // 
             // Label16
@@ -340,7 +340,7 @@
             this.Label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Label8.AutoSize = true;
             this.Label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label8.Location = new System.Drawing.Point(660, 29);
+            this.Label8.Location = new System.Drawing.Point(653, 29);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(44, 15);
             this.Label8.TabIndex = 15;
@@ -349,10 +349,10 @@
             // txtRate
             // 
             this.txtRate.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRate.Location = new System.Drawing.Point(710, 23);
+            this.txtRate.Location = new System.Drawing.Point(703, 23);
             this.txtRate.Multiline = true;
             this.txtRate.Name = "txtRate";
-            this.txtRate.Size = new System.Drawing.Size(160, 26);
+            this.txtRate.Size = new System.Drawing.Size(141, 26);
             this.txtRate.TabIndex = 16;
             // 
             // Label11
@@ -360,7 +360,7 @@
             this.Label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Label11.AutoSize = true;
             this.Label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label11.Location = new System.Drawing.Point(878, 29);
+            this.Label11.Location = new System.Drawing.Point(859, 29);
             this.Label11.Name = "Label11";
             this.Label11.Size = new System.Drawing.Size(36, 15);
             this.Label11.TabIndex = 17;
@@ -369,10 +369,10 @@
             // txtQty
             // 
             this.txtQty.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQty.Location = new System.Drawing.Point(920, 23);
+            this.txtQty.Location = new System.Drawing.Point(901, 23);
             this.txtQty.Multiline = true;
             this.txtQty.Name = "txtQty";
-            this.txtQty.Size = new System.Drawing.Size(114, 26);
+            this.txtQty.Size = new System.Drawing.Size(89, 26);
             this.txtQty.TabIndex = 18;
             // 
             // btnAdd
@@ -381,7 +381,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(1040, 23);
+            this.btnAdd.Location = new System.Drawing.Point(996, 23);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(61, 26);
             this.btnAdd.TabIndex = 19;
@@ -396,9 +396,9 @@
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
             this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
-            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
-            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
+            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146F));
+            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 303F));
             this.TableLayoutPanel1.Controls.Add(this.Label2, 0, 2);
             this.TableLayoutPanel1.Controls.Add(this.Label1, 0, 1);
             this.TableLayoutPanel1.Controls.Add(this.txtName, 1, 2);
@@ -419,7 +419,7 @@
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.89655F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TableLayoutPanel1.Size = new System.Drawing.Size(1103, 82);
+            this.TableLayoutPanel1.Size = new System.Drawing.Size(1054, 82);
             this.TableLayoutPanel1.TabIndex = 36;
             // 
             // Label2
@@ -516,7 +516,7 @@
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.TableLayoutPanel1.SetRowSpan(this.txtAddress, 2);
-            this.txtAddress.Size = new System.Drawing.Size(162, 52);
+            this.txtAddress.Size = new System.Drawing.Size(140, 52);
             this.txtAddress.TabIndex = 10;
             // 
             // Label7
@@ -524,16 +524,16 @@
             this.Label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Label7.AutoSize = true;
             this.Label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label7.Location = new System.Drawing.Point(871, 29);
+            this.Label7.Location = new System.Drawing.Point(849, 22);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(69, 15);
+            this.Label7.Size = new System.Drawing.Size(45, 30);
             this.Label7.TabIndex = 6;
             this.Label7.Text = "Bill Date :";
             // 
             // dtpBillDate
             // 
             this.dtpBillDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBillDate.Location = new System.Drawing.Point(946, 25);
+            this.dtpBillDate.Location = new System.Drawing.Point(900, 25);
             this.dtpBillDate.Name = "dtpBillDate";
             this.dtpBillDate.Size = new System.Drawing.Size(153, 22);
             this.dtpBillDate.TabIndex = 13;
@@ -556,7 +556,7 @@
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel1.Location = new System.Drawing.Point(0, 0);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1108, 34);
+            this.Panel1.Size = new System.Drawing.Size(1063, 34);
             this.Panel1.TabIndex = 35;
             // 
             // Label9
@@ -573,11 +573,11 @@
             // lblPurchasesAndSales
             // 
             this.lblPurchasesAndSales.AutoSize = true;
-            this.lblPurchasesAndSales.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPurchasesAndSales.Font = new System.Drawing.Font("Humanst521 BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPurchasesAndSales.ForeColor = System.Drawing.Color.White;
-            this.lblPurchasesAndSales.Location = new System.Drawing.Point(432, 4);
+            this.lblPurchasesAndSales.Location = new System.Drawing.Point(3, 5);
             this.lblPurchasesAndSales.Name = "lblPurchasesAndSales";
-            this.lblPurchasesAndSales.Size = new System.Drawing.Size(203, 22);
+            this.lblPurchasesAndSales.Size = new System.Drawing.Size(163, 22);
             this.lblPurchasesAndSales.TabIndex = 1;
             this.lblPurchasesAndSales.Text = "Purchases And Sales";
             // 
@@ -605,7 +605,7 @@
             this.Controls.Add(this.TableLayoutPanel1);
             this.Controls.Add(this.Panel1);
             this.Name = "UserPurchaseAndSales";
-            this.Size = new System.Drawing.Size(1108, 506);
+            this.Size = new System.Drawing.Size(1063, 534);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.TableLayoutPanel2.ResumeLayout(false);
             this.TableLayoutPanel2.PerformLayout();

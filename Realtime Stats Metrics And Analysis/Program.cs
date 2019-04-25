@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Realtime_Stats_Metrics_And_Analysis.UI;
 
 namespace Realtime_Stats_Metrics_And_Analysis
 {
@@ -16,7 +17,7 @@ namespace Realtime_Stats_Metrics_And_Analysis
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmMain());
         }
     }
 }
