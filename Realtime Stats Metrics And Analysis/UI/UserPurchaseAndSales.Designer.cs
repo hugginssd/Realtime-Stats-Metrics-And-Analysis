@@ -216,7 +216,7 @@
             // 
             this.Label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label15.Location = new System.Drawing.Point(-41, 199);
+            this.Label15.Location = new System.Drawing.Point(4, 185);
             this.Label15.Name = "Label15";
             this.Label15.Size = new System.Drawing.Size(174, 19);
             this.Label15.TabIndex = 39;
