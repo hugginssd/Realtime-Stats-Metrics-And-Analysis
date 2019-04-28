@@ -17,11 +17,17 @@ namespace Realtime_Stats_Metrics_And_Analysis.BLL
 
         public decimal GrandTotal { get; set; }
 
+        public decimal Rate { get; set; }
+
         public DateTime TransactionDate { get; set; }
 
         public decimal Tax { get; set; }
+            
+        public decimal Qty { get; set; }
 
         public decimal Discount { get; set; }
+            
+        public decimal AddedDate { get; set; }
 
         public int AddedBy { get; set; }
             

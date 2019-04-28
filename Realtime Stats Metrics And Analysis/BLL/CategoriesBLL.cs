@@ -15,7 +15,6 @@ namespace Realtime_Stats_Metrics_And_Analysis.BLL
 
         public string Description { get; set; }
 
-
         public DateTime AddedDate { get; set; }
 
         public int AddedBy { get; set; }
