@@ -60,8 +60,13 @@
     <Compile Include="BLL\TransactionBLL.cs" />
     <Compile Include="BLL\TransactionDetailBLL.cs" />
     <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="DAL\CategoriesDAL.cs" />
     <Compile Include="DAL\Connection.cs" />
+    <Compile Include="DAL\DealerCustomerDAL.cs" />
     <Compile Include="DAL\Functions.cs" />
+    <Compile Include="DAL\ProductsDAL.cs" />
+    <Compile Include="DAL\TransactionDAL.cs" />
+    <Compile Include="DAL\TransactionDetailsDAL.cs" />
     <Compile Include="DAL\UserDAL.cs" />
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
