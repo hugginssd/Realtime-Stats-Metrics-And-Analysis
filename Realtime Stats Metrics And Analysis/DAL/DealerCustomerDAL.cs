@@ -1,235 +1,258 @@
-﻿using System;
+﻿using Realtime_Stats_Metrics_And_Analysis.BLL;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Realtime_Stats_Metrics_And_Analysis.DAL
 {
     class DealerCustomerDAL
     {
-        Public Function Selectt() As DataTable
-        Static con As New SqlConnection(constring)
-        Dim dt = New DataTable
-        Try
-            Dim sql = "SELECT *  FROM [dbo].[tbldeacust]"
-            Dim cmd = New SqlCommand(sql, con)
-            Dim da = New SqlDataAdapter(cmd)
-            con.Open()
-            da.Fill(dt)
-        Catch ex As Exception
-            MessageBox.Show(ex.ToString)
+        Connection connect = new Connection();
+        public DataTable Selectt()
+        {
+            SqlConnection con = new SqlConnection(this.connect.connection);
+            DataTable dt = new DataTable();
+            try
+            {
+                string sql = "SELECT *  FROM [dbo].[tbldeacust]";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                con.Open();
+                da.Fill(dt);
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dt;
+        }
 
-        Finally
-            con.Close()
-        End Try
+        public bool Insert(DealerCustomerBLL bi) {
+            bool isSuccess = false;
+            SqlConnection con = new SqlConnection(this.connect.connection);
 
+            try
+            {
+                string sql = "INSERT INTO [dbo].[tbldeacust]" +
+                                       "([type]" +
+                                       ",[name]" +
+                                       ",[email]" +
+                                       ",[contact]" +
+                                       ",[address]" +
+                                       ",[addeddate]" +
+                                       ",[addedby])" +
+                                 "VALUES" +
+                                       "(@type," +
+                                       "@name," +
+                                       "@email," +
+                                       "@contact," +
+                                       "@address," +
+                                       "@addeddate," +
+                                       "@addedby)";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@type", bi.Type);
+                cmd.Parameters.AddWithValue("@name", bi.Name);
+                cmd.Parameters.AddWithValue("@email", bi.Email);
+                cmd.Parameters.AddWithValue("@contact", bi.Contact);
+                cmd.Parameters.AddWithValue("@address", bi.Address);
+                cmd.Parameters.AddWithValue("@addeddate", bi.AddedDate);
+                cmd.Parameters.AddWithValue("@addedby", bi.AddedBy);
+                con.Open();
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally {
+                con.Close();
+            }
+            return isSuccess;
+        }
 
+        public bool Update(DealerCustomerBLL bu) {
+            SqlConnection con = new SqlConnection(this.connect.connection);
+            bool isSuccess = false;
+            try
+            {
+                string sql = "UPDATE [dbo].[tbldeacust]" +
+                                       "SET[type] = @type," +
+                                           "[name] = @name," +
+                                           "[email] = @email," +
+                                           "[contact] = @contact," +
+                                           "[address] = @address," +
+                                           "[addeddate] = @addeddate," +
+                                           "[addedby] = @addedby," +
+                                     "WHERE id = @id";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@type", bu.Type);
+                cmd.Parameters.AddWithValue("@name", bu.Name);
+                cmd.Parameters.AddWithValue("@email", bu.Email);
+                cmd.Parameters.AddWithValue("@contact", bu.Contact);
+                cmd.Parameters.AddWithValue("@address", bu.Address);
+                cmd.Parameters.AddWithValue("@addeddate", bu.AddedDate);
+                cmd.Parameters.AddWithValue("@addedby", bu.AddedBy);
+                con.Open();
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
 
-        Return dt
-    End Function
+            }
 
-    Public Function Insert(bi As dealerCustomerBLL) As Boolean
-        Dim isSuccess = False
-        Static con As New SqlConnection(constring)
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
+            return isSuccess;
+        }
 
-        Try
-            Dim sql = "INSERT INTO [dbo].[tbldeacust]
-                                   ([type]
-                                   ,[name]
-                                   ,[email]
-                                   ,[contact]
-                                   ,[address]
-                                   ,[addeddate]
-                                   ,[addedby])
-                             VALUES
-                                   (@type,
-                                    @name,
-                                    @email,
-                                    @contact,
-                                    @address,
-                                    @addeddate,
-                                    @addedby)"
-            Dim cmd = New SqlCommand(sql, con)
-            cmd.Parameters.AddWithValue("@type", bi.Type)
-            cmd.Parameters.AddWithValue("@name", bi.Name)
-            cmd.Parameters.AddWithValue("@email", bi.Email)
-            cmd.Parameters.AddWithValue("@contact", bi.Contact)
-            cmd.Parameters.AddWithValue("@address", bi.Address)
-            cmd.Parameters.AddWithValue("@addeddate", bi.Addeddate)
-            cmd.Parameters.AddWithValue("@addedby", bi.Addedby)
-            con.Open()
-            Dim rows = cmd.ExecuteNonQuery
-            If rows > 0 Then
-                isSuccess = True
-            Else
-                isSuccess = False
-            End If
-
-
-
-        Catch ex As Exception
-            MessageBox.Show(ex.ToString)
-        Finally
-            con.Close()
-
-
-        End Try
-
-
-
-
-
-        Return isSuccess
-    End Function
-
-    Public Function Update(bu As dealerCustomerBLL) As Boolean
-        Static con As New SqlConnection(constring)
-        Dim isSuccess = False
-        Try
-            Dim sql = "UPDATE [dbo].[tbldeacust]
-                                   SET[type] = @type,
-                                       [name] = @name,
-                                       [email] = @email,
-                                       [contact] = @contact,
-                                       [address] = @address,
-                                       [addeddate] = @addeddate,
-                                       [addedby] = @addedby,
-                                 WHERE id = @id"
-            Dim cmd = New SqlCommand(sql, con)
-            cmd.Parameters.AddWithValue("@type", bu.Type)
-            cmd.Parameters.AddWithValue("@name", bu.Name)
-            cmd.Parameters.AddWithValue("@email", bu.Email)
-            cmd.Parameters.AddWithValue("@contact", bu.Contact)
-            cmd.Parameters.AddWithValue("@address", bu.Address)
-            cmd.Parameters.AddWithValue("@addeddate", bu.Addeddate)
-            cmd.Parameters.AddWithValue("@addedby", bu.Addedby)
-            con.Open()
-            Dim rows = cmd.ExecuteNonQuery()
-            If rows > 0 Then
-                isSuccess = True
-            Else
-                isSuccess = False
-            End If
-
-        Catch ex As Exception
-            MessageBox.Show(ex.ToString)
-
-        Finally
-            con.Close()
-        End Try
-        Return isSuccess
-    End Function
-
-    Public Function Delete(bd As dealerCustomerBLL) As Boolean
-        Static con As New SqlConnection(constring)
-        Dim isSuccess = False
-        Try
-            Dim sql = "DELETE FROM tbldeacust WHERE id=@id"
-            Dim cmd = New SqlCommand(sql, con)
-            cmd.Parameters.AddWithValue("@id", bd.Id)
-            con.Open()
-            Dim rows = cmd.ExecuteNonQuery
-            If rows > 0 Then
-                isSuccess = True
-            Else
-                isSuccess = False
-            End If
-        Catch ex As Exception
-            MessageBox.Show(ex.ToString)
-        Finally
-            con.Close()
-        End Try
-
-
-        Return isSuccess
-    End Function
-
-    Public Function Search(ByVal keywords As String) As DataTable
-        Static con As New SqlConnection(constring)
-        Dim dt = New DataTable
-        Try
-            Dim sql = "SELECT * FROM tbldeacust WHERE id LIKE '%" + keywords + "%' OR name LIKE '%" + keywords + "%' OR  type LIKE '%" + keywords + "%'"
-            Dim cmd = New SqlCommand(sql, con)
-            Dim da = New SqlDataAdapter(cmd)
-            con.Open()
-            da.Fill(dt)
-
-        Catch ex As Exception
-            MessageBox.Show(ex.ToString)
-        Finally
-            con.Close()
-        End Try
-
-        Return dt
-    End Function
-
-    Public Function SearchDealerCustomerForTransaction(keywords As String) As dealerCustomerBLL
-        Dim dc As New dealerCustomerBLL
-        Static con As New SqlConnection(constring)
-
-        Dim dt As New DataTable
-        Try
-            Dim sql = "SELECT [id]
-                              ,[type]
-                              ,[name]
-                              ,[email]
-                              ,[contact]
-                              ,[address]
-                              ,[addeddate]
-                              ,[addedby]
-                          FROM[dbo].[tbldeacust]
-        WHERE id LIKE '%" + keywords + "%' OR name LIKE '%" + keywords + "%'"
-            Dim da = New SqlDataAdapter(sql, con)
-            con.Open()
-            da.Fill(dt)
-            If dt.Rows.Count > 0 Then
-                dc.Name = dt.Rows(0)("name").ToString
-                dc.Email = dt.Rows(0)("email").ToString
-                dc.Contact = dt.Rows(0)("contact").ToString
-                dc.Address = dt.Rows(0)("address").ToString
-            End If
-
-        Catch ex As Exception
-
-            MessageBox.Show(ex.ToString)
-        Finally
-            con.Close()
-        End Try
-
-        Return dc
-
-    End Function
-
-    Public Function GetDeaCustIFromName(name As String) As dealerCustomerBLL
-        Dim dc As New dealerCustomerBLL
-        Static con As New SqlConnection(constring)
-        Dim dt = New DataTable
-        Try
-            Dim sql = "SELECT [id]
-                            ,[type]
-                            ,[name]
-                            ,[email]
-                            ,[contact]
-                            ,[address]
-                            ,[addeddate]
-                            ,[addedby]
-                        FROM[dbo].[tbldeacust]
-        WHERE name " + name
+        public bool Delete(DealerCustomerBLL bd) {
+            SqlConnection con = new SqlConnection(this.connect.connection);
+            bool isSuccess = false;
+            try
+            {
+                string sql = "DELETE FROM tbldeacust WHERE id=@id";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@id", bd.ID);
+                con.Open();
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
 
 
+            return isSuccess;
+        }
+        public DataTable Search(string keywords) {
+            SqlConnection con = new SqlConnection(this.connect.connection);
+            DataTable dt = new DataTable();
+            try
+            {
+                string sql = "SELECT * FROM tbldeacust WHERE id LIKE '%" + keywords + "%' OR name LIKE '%" + keywords + "%' OR  type LIKE '%" + keywords + "%'";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                con.Open();
+                da.Fill(dt);
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.ToString());
+            }
+            finally {
+                con.Close();
+            }
 
-        Catch ex As Exception
-            MessageBox.Show(ex.ToString)
+            return dt;
+        }
 
-        Finally
-            con.Close()
-        End Try
+        public DealerCustomerBLL SearchDealerCustomerForTransaction(string keywords) {
+            DealerCustomerBLL dc = new DealerCustomerBLL();
+            SqlConnection con = new SqlConnection(this.connect.connection);
+
+            DataTable dt = new DataTable();
+            try
+            {
+                string sql = "SELECT [id]" +
+                              ",[type]" +
+                              ",[name]" +
+                              ",[email]" +
+                              ",[contact]" +
+                              ",[address]" +
+                              ",[addeddate]" +
+                              ",[addedby]" +
+                              "FROM[dbo].[tbldeacust]" +
+                              "WHERE id LIKE '%" + keywords + "%' OR name LIKE '%" + keywords + "%'";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                con.Open();
+                da.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    dc.Name = dt.Rows[0]["name"].ToString();
+                    dc.Email = dt.Rows[0]["email"].ToString();
+                    dc.Contact = dt.Rows[0]["contact"].ToString();
+                    dc.Address = dt.Rows[0]["address"].ToString();
+                }
+            }
+            catch (Exception ex) {
+
+                MessageBox.Show(ex.ToString());
+            }
+            finally {
+                con.Close();
+            }
+
+            return dc;
+        }
+
+        public DealerCustomerBLL GetDeaCustIFromName(string name)
+        {
+            DealerCustomerBLL dc = new DealerCustomerBLL();
+            SqlConnection con = new SqlConnection(this.connect.connection);
+            DataTable dt = new DataTable();
+            try
+            {
+                string sql = "SELECT [id]" +
+                            ",[type]" +
+                            ",[name]" +
+                            ",[email]" +
+                            ",[contact]" +
+                            ",[address]" +
+                            ",[addeddate]" +
+                            ",[addedby]" +
+                            "FROM[dbo].[tbldeacust]" +
+                            "WHERE name " + name;
 
 
+            }
 
-
-        Return dc
-    End Function
-    }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dc;
+        }
+        }
 }
