@@ -162,7 +162,7 @@ namespace Realtime_Stats_Metrics_And_Analysis.DAL
         return isSuccess;
    }
 
-    public DataTable Search(string keywords)
+        public DataTable Search(string keywords)
     {
         SqlConnection con = new SqlConnection(this.connect.connection);
         DataTable dt = new DataTable();
