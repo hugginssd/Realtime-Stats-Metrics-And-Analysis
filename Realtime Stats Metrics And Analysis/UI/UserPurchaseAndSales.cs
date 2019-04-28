@@ -51,17 +51,24 @@ namespace Realtime_Stats_Metrics_And_Analysis.UI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            tdbll.GrandTotal = decimal.Parse( txtGrandtotal.Text);
-            tdbll.Discount = decimal.Parse(txtDiscount.Text);
-            tdbll.Qty = int.Parse(txtQty.Text);
-            bool IsSuccess = tddall.InsertTransactionDetail(tdbll);
-            if (IsSuccess)
+            try
             {
-                MessageBox.Show("Successfull");
+                tdbll.GrandTotal = decimal.Parse(txtGrandtotal.Text);
+                tdbll.Discount = decimal.Parse(txtDiscount.Text);
+                tdbll.Qty = int.Parse(txtQty.Text);
+                bool IsSuccess = tddall.InsertTransactionDetail(tdbll);
+                if (IsSuccess)
+                {
+                    MessageBox.Show("Successfull");
+                }
+                else
+                {
+                    MessageBox.Show("Failed to initiate a record");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Failed to initiate a record");
+                MessageBox.Show(ex.ToString(),"UI error");
             }
         }
     }
