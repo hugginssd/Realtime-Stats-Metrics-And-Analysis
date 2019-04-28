@@ -163,6 +163,7 @@
             this.BtnSearch.TabIndex = 67;
             this.BtnSearch.Text = "SEARCH";
             this.BtnSearch.UseVisualStyleBackColor = false;
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // txtSearch
             // 
@@ -201,6 +202,7 @@
             this.BtnReset.TabIndex = 64;
             this.BtnReset.Text = "RESET";
             this.BtnReset.UseVisualStyleBackColor = false;
+            this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // BtnCreate
             // 
@@ -215,6 +217,7 @@
             this.BtnCreate.TabIndex = 63;
             this.BtnCreate.Text = "CREATE";
             this.BtnCreate.UseVisualStyleBackColor = false;
+            this.BtnCreate.Click += new System.EventHandler(this.BtnCreate_Click);
             // 
             // txtEmail
             // 

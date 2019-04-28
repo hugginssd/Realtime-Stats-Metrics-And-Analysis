@@ -92,6 +92,7 @@
             this.btnSave.TabIndex = 53;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtReturnamount
             // 
@@ -387,6 +388,7 @@
             this.btnAdd.TabIndex = 19;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // TableLayoutPanel1
             // 
