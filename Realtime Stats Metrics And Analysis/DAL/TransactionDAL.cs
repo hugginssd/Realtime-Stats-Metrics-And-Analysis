@@ -37,12 +37,12 @@ namespace Realtime_Stats_Metrics_And_Analysis.DAL
                                                    "@addedby)";
                 SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@type", t.Type);
-                cmd.Parameters.AddWithValue("@deacustid", t.DeaCustId);
+                cmd.Parameters.AddWithValue("@deacustid", t.DeaCustID);
                 cmd.Parameters.AddWithValue("@grandtotal", t.GrandTotal);
                 cmd.Parameters.AddWithValue("@transactiondate", t.TransactionDate);
                 cmd.Parameters.AddWithValue("@tax", t.Tax);
                 cmd.Parameters.AddWithValue("@discount", t.Discount);
-                cmd.Parameters.AddWithValue("@addedby", t.Addedby);
+                cmd.Parameters.AddWithValue("@addedby", t.AddedBy);
                 con.Open();
 
                 object o = cmd.ExecuteScalar();
