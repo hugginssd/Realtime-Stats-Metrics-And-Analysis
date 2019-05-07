@@ -18,3 +18,7 @@ C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Me
 C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime_Stats_Metrics_And_Analysis.UI.FrmLogin.resources
 C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime_Stats_Metrics_And_Analysis.UI.UserLogin.resources
 C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\bin\Debug\Realtime Stats Metrics And Analysis.exe.manifest
+C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\bin\Debug\Realtime Stats Metrics And Analysis.application
+C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.exe.manifest
+C:\Users\user\source\repos\Realtime Stats Metrics And Analysis\Realtime Stats Metrics And Analysis\obj\Debug\Realtime Stats Metrics And Analysis.application
